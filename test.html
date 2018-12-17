@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,30 +9,40 @@
     <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
     <script src="/library/kquery.js"></script>
     <style>
-    .textdiv{
-        width: 10%;
-        height: 80px;;
-        border: 1px solid grey;
-        float: left;
-        font-size: 20px;
-    }
-    
+        .textdiv {
+            width: 10%;
+            height: 80px;
+            ;
+            border: 1px solid grey;
+            float: left;
+            font-size: 20px;
+        }
     </style>
 </head>
+
 <body>
-    <div class="textdiv" id="firstDiv"></div>
-    <div class="textdiv" ></div>
+    <div class="textdiv" id="jlk"></div>
+    <div class="textdiv"></div>
+    <div class="textdiv"></div>
+    <div class="textdiv"></div>
 </body>
+
 </html>
 <script>
-var textDiv=new $(".textdiv")
-textDiv.append(5)
+    var textDiv = new $(".textdiv")
+    var jlk = new $("#jlk")
+    console.log(textDiv);
+
+    textDiv.append(5)
+    jlk.append(4)
+
 
 // var firstDiv =document.getElementById("firstDiv")
+// console.log(firstDiv);
 
 
 // new $(firstDiv).append(10)
 
 
 
-</script>   
+</script>

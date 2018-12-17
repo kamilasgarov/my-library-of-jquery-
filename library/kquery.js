@@ -1,20 +1,33 @@
 class $ {
     constructor(selector) {
-        if (selector.typeof === "string") {
+
+        if (typeof (selector) === "string") {
             this.element = document.querySelectorAll(selector)
+
         }
         else {
+            console.log(typeof(selector));
+            
             this.element = []
             console.log(this.element);
-            
+
             this.element.push(selector)
-           
+            console.log(this.element);
         }
 
     }
     append(html) {
+        // console.log("lad;s");
+        // console.log(this.element);
+
         for (let index = 0; index < this.element.length; index++) {
+            // console.log(this.element[index]);
             this.element[index].innerHTML += html
+            // console.log(this.element[index]);
+            console.log(this.element[index]);
+
+
+
 
         }
 
