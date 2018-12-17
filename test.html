@@ -21,8 +21,8 @@
 </head>
 
 <body>
-    <div class="textdiv" id="jlk"></div>
-    <div class="textdiv"></div>
+    <div class="textdiv" id="firstDiv"></div>
+    <div class="textdiv" id="secondDiv"></div>
     <div class="textdiv"></div>
     <div class="textdiv"></div>
 </body>
@@ -30,12 +30,28 @@
 </html>
 <script>
     var textDiv = new $(".textdiv")
-    var jlk = new $("#jlk")
+    var firstDiv = new $("#firstDiv")
+    var secondDiv = new $("#secondDiv")
     console.log(textDiv);
-
     textDiv.append(5)
-    jlk.append(4)
+    firstDiv.append(4)
+    var myStyles = {
+        'background-color': 'red',
+        'font-size': '30px'
+    }
+    var myStyles1 = {
+        'background-color': 'blue',
+        'font-size': '50px'
+    }
+    var myStyles2 = {
+        'background-color': 'yellow',
+        'font-size': '80px'
+    }
+    // console.log(myStyles.length);
 
+    textDiv.css(myStyles)
+    firstDiv.css(myStyles1)
+    secondDiv.css(myStyles2)
 
 // var firstDiv =document.getElementById("firstDiv")
 // console.log(firstDiv);

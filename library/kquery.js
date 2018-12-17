@@ -10,7 +10,6 @@ class $ {
             
             this.element = []
             console.log(this.element);
-
             this.element.push(selector)
             console.log(this.element);
         }
@@ -49,11 +48,20 @@ class $ {
     }
     //cssi fornan islet slidere tetbiq et   
     css(myStyle) {
-
-        for (const key in myStyle) {
-            let value = myStyle[key];
-            this.elmenet.style[key] = value;
-        }
+        for (let index = 0; index < this.element.length; index++) {
+            for (const key in myStyle) {
+               
+                
+                    let value = myStyle[key];
+                    this.element[index].style[key] = value;
+                    
+                }
+               
+            }
+            
+        
+        
+        
     }
     empty() {
         this.element.innerHTML = ""
